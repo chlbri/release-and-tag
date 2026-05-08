@@ -1,11 +1,8 @@
-# Remarks
+# GitHub Action - Create Tag Release
 
-This is a fork of create tag release action to update to new GITHUB-OUTPUT
+This GitHub Action (written in JavaScript) wraps the [GitHub Release API](https://developer.github.com/v3/repos/releases/), specifically the [Create a Release](https://developer.github.com/v3/repos/releases/#create-a-release) endpoint, to allow you to leverage GitHub Actions to create releases. It uses the new `GITHUB_OUTPUT` environment file for outputs.
 
-# GitHub Action - Releases API
-This GitHub Action (written in JavaScript) wraps the [GitHub Release API](https://developer.github.com/v3/repos/releases/), specifically the [Create a Release](https://developer.github.com/v3/repos/releases/#create-a-release) endpoint, to allow you to leverage GitHub Actions to create releases.
-
-<a href="https://github.com/actions/create-release"><img alt="GitHub Actions status" src="https://github.com/actions/create-release/workflows/Tests/badge.svg"></a>
+<a href="https://github.com/chlbri/create-tag-release"><img alt="GitHub Actions status" src="https://github.com/chlbri/create-tag-release/workflows/Tests/badge.svg"></a>
 
 ## Usage
 ### Pre-requisites
@@ -48,7 +45,7 @@ jobs:
         uses: actions/checkout@master
       - name: Create Release
         id: create_release
-        uses: actions/create-release@latest
+        uses: chlbri/create-tag-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
@@ -64,8 +61,11 @@ jobs:
 
 This will create a [Release](https://help.github.com/en/articles/creating-releases), as well as a [`release` event](https://developer.github.com/v3/activity/events/types/#releaseevent), which could be handled by a third party service, or by GitHub Actions for additional uses, for example the [`@actions/upload-release-asset`](https://www.github.com/actions/upload-release-asset) GitHub Action. This uses the `GITHUB_TOKEN` provided by the [virtual environment](https://help.github.com/en/github/automating-your-workflow-with-github-actions/virtual-environments-for-github-actions#github_token-secret), so no new token is needed.
 
+## Acknowledgements
+This action is based on the work of [liuxin](https://github.com/liuxin), who updated the original [`actions/create-release`](https://github.com/actions/create-release) by GitHub to use the new `GITHUB_OUTPUT` environment file and added the `tag_name` output. Many thanks for laying the groundwork!
+
 ## Contributing
-We would love you to contribute to `@actions/create-release`, pull requests are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+We would love you to contribute to `chlbri/create-tag-release`, pull requests are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 
 ## License
 The scripts and documentation in this project are released under the [MIT License](LICENSE)
