@@ -1,4 +1,4 @@
-name: 'Create Tag Release'
+name: 'Realease & tag'
 description: 'Create a release for a tag in your repository'
 author: 'chlbri'
 inputs:
