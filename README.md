@@ -1,3 +1,7 @@
+# Remarks
+
+This is a fork of create tag release action to update to new GITHUB-OUTPUT
+
 # GitHub Action - Releases API
 This GitHub Action (written in JavaScript) wraps the [GitHub Release API](https://developer.github.com/v3/repos/releases/), specifically the [Create a Release](https://developer.github.com/v3/repos/releases/#create-a-release) endpoint, to allow you to leverage GitHub Actions to create releases.
 
