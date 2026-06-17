@@ -29,7 +29,7 @@ outputs:
   tag_name:
     description: 'The Tag Name'
 runs:
-  using: 'node12'
+  using: 'node24'
   main: 'dist/index.js'
 branding:
   icon: 'tag'
