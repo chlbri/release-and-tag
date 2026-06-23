@@ -1,7 +1,7 @@
 import { vi, Mock } from 'vitest';
 import { getInput, setOutput, setFailed } from '@actions/core';
 import { getOctokit, context } from '@actions/github';
-import run from '../src/create-release';
+import run from '../create-release';
 
 vi.mock('@actions/core', () => {
   return {
