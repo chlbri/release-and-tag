@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1782255908687" clover="3.2.0">
-  <project timestamp="1782255908687" name="All files">
+<coverage generated="1782256022420" clover="3.2.0">
+  <project timestamp="1782256022420" name="All files">
     <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="24" coveredelements="24" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
     <file name="create-release.ts" path="/Users/bri/Documents/GitHub/release-and-tag/src/create-release.ts">
       <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
@@ -11,18 +11,18 @@
       <line num="14" count="8" type="stmt"/>
       <line num="17" count="8" type="stmt"/>
       <line num="18" count="8" type="stmt"/>
-      <line num="19" count="8" type="stmt"/>
-      <line num="20" count="8" type="stmt"/>
       <line num="21" count="8" type="stmt"/>
-      <line num="26" count="8" type="stmt"/>
-      <line num="39" count="6" type="stmt"/>
+      <line num="22" count="8" type="stmt"/>
+      <line num="23" count="8" type="stmt"/>
+      <line num="29" count="8" type="stmt"/>
       <line num="42" count="6" type="stmt"/>
-      <line num="43" count="6" type="stmt"/>
-      <line num="44" count="6" type="stmt"/>
       <line num="45" count="6" type="stmt"/>
-      <line num="47" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="48" count="1" type="stmt"/>
-      <line num="50" count="1" type="stmt"/>
+      <line num="46" count="6" type="stmt"/>
+      <line num="47" count="6" type="stmt"/>
+      <line num="48" count="6" type="stmt"/>
+      <line num="50" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="51" count="1" type="stmt"/>
+      <line num="53" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

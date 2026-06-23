@@ -1,3 +1,3 @@
-import run from "./create-release";
+import run from './create-release';
 
 run();
