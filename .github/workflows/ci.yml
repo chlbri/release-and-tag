@@ -9,6 +9,9 @@ on:
         type: string
 
   push:
+    branches:
+      - 'main'
+      - 'master'
 
 jobs:
   all:
